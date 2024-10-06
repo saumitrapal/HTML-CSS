@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GET ANIMAL</title>
+    </head>
+    <body>
+        <script>
+           async function getAminal() {
+                const response = await fetch("http://fakerapi.it/api/v1/person");
+                const finalData = await response.json();
+
+                console.log(finalData);
+            }
+        </script>
+        <button onclick = 'getAminal()'>Get Animal</button>
+    </body>
+</html>
